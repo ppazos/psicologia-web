@@ -10,6 +10,9 @@ $_SESSION['form_id'] = $_form_id;
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Atención psicológica para niños, adolescentes y adultos. Psicoterapia y psicología laboral.">
+    <meta name="keywords" content="consulta psicologica, terapia, psicoterapia, psicologia laboral, sicoteraia, orientacion, padres, niños, adultos, consulta sicologica, seleccion de personal, autismo, discapacidad intelectual, montevideo, uruguay">
+    <meta name="author" content="info@barbaracardozo.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="shortcut icon" href="/favicon.ico">-->
@@ -161,9 +164,6 @@ $_SESSION['form_id'] = $_form_id;
         min-height: 96vh; /* These two lines are counted as one :-)       */
         display: flex;
         align-items: center;
-      }
-      
-      section {
         width: 100%;
         margin-bottom: 4em; /* footer height */
         padding-top: 1em;
@@ -173,11 +173,36 @@ $_SESSION['form_id'] = $_form_id;
       section p {
         padding: 1em 0 0 0;
       }
+      section h1 { 
+        margin-top: 0;
+      }
+      
+      .navbar {
+         margin-bottom: 0;
+      }
+      
+      #home {
+        min-height: 92%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 92vh; /* These two lines are counted as one :-)       */
+        padding-top: 0;
+      }
+      #home h2, #services h2 {
+        margin-bottom: 1em;
+      }
+      #services h2 {
+        margin-top: 1.5em;
+      }
       #home p {
         padding: 0;
       }
       #services, #contact {
         background-color: #eee;
+      }
+      #profile h1 {
+        margin-bottom: 1em;
+      }
+      #contact h1 {
+        margin-bottom: 2em;
       }
       
       .goup {
@@ -288,22 +313,38 @@ $_SESSION['form_id'] = $_form_id;
   </head>
   <body>
     <a name="home"></a>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#services">Áreas de atención</a></li>
+              <li><a href="#profile">Perfil profesional</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    
     <section id="home">
       <div class="container">
-      <h1 align="center">Bárbara Cardozo Cabanelas</h1>
-      <h2 align="center">LICENCIADA EN PSICOLOGÍA</h2> 
-      <div class="main_message">
-         <p align="center" class="message">
-          "La ciencia moderna aún no ha producido un medicamento tranquilizador tan eficaz como lo son unas pocas palabras"
-         </p>
-         <p class="author">Sigmund Freud</p>
+        <h1 align="center">Bárbara Cardozo Cabanelas</h1>
+        <h2 align="center">LICENCIADA EN PSICOLOGÍA</h2> 
+        <div class="main_message">
+          <p align="center" class="message">
+            "La ciencia moderna aún no ha producido un medicamento tranquilizador tan eficaz como lo son unas pocas palabras"
+          </p>
+          <p class="author">S. Freud</p>
+        </div>
       </div>
-      <p align="center">
-        <a href="#services" class="btn btn-primary">Áreas de atención</a>
-        <a href="#profile" class="btn btn-default">Perfil profesional</a>
-        <a href="#contact" class="btn btn-default">Contacto</a>
-      </p>
-     </div>
     </section>
    
    <a name="services"></a>
@@ -323,7 +364,6 @@ $_SESSION['form_id'] = $_form_id;
              <li>Atención psicológica a niños, adolescentes y adultos.</li>
              <li>Psicoterapia individual.</li>
              <li>Orientación a padres.</li>
-             <li>Consultorio en la zona de Cordón Sur, Pocitos y Punta Carretas</li>
            </ul>
         </div>
         <div class="col-sm-12 col-md-4">
@@ -331,6 +371,7 @@ $_SESSION['form_id'] = $_form_id;
            <ul>
              <li>Psicoadiagnóstico</li>
              <li>Baterías para certificados de discapacidad</li>
+             <li>Evaluaciones psicolaborales</li>
            </ul>
         </div>
         <div class="col-sm-12 col-md-4">
@@ -353,10 +394,19 @@ $_SESSION['form_id'] = $_form_id;
       <div class="container">
        <h1 align="center">Perfil profesional</h1>
        <p align="justify">
-         Atención Psicológica a primera infancia, adolescencia y familia desde el abordaje tanto institucional como particular.
+       Licenciada en Psicología egresada de la Universidad de la República, con sólida 
+       formación en infancia y adolescencia, especializada en la atención psicoterapéutica. 
+       Cuenta con experiencia en instituciones educativas, abordando diversas problemáticas, 
+       trabajando en equipos multidisciplinarios con abordajes integrales. Ha trabajado en
+       el área de discapacidad en contextos heterogéneos.
        </p>
-       <p align="center">
+       <p align="justify">
+       Asimismo, posee formación y experiencia específica en Capital Humano. Ha realizado
+       diferentes cursos a nivel de Gestión de Recursos Humanos, así como específicos en
+       Selección de Personal y Evaluación Psicolaboral. 
+         <!--
          <img src="LinkedIn.png" class="img-responsive" />
+         -->
        </p>
      </div>
      
@@ -379,14 +429,14 @@ $_SESSION['form_id'] = $_form_id;
                <div class="row">
                  <div class="col-md-6">
                    <div class="form-group">
-                     <label for="name">Mi nombre es</label>
-                     <input type="text" class="form-control" id="name" id="name" placeholder="Juan Perez" required="required" />
+                     <label for="name">Nombre</label>
+                     <input type="text" class="form-control" id="name" name="name" required="required" />
                    </div>
                    <div class="form-group">
-                     <label for="email">Mi correo es</label>
+                     <label for="email">Correo electrónico</label>
                      <div class="input-group">
-                       <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                       <input type="email" class="form-control" id="email" name="email" placeholder="juan@perez.com" required="required" />
+                       <!--<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>-->
+                       <input type="email" class="form-control" id="email" name="email" required="required" />
                      </div>
                    </div>
                    <div class="form-group">
@@ -397,7 +447,7 @@ $_SESSION['form_id'] = $_form_id;
                  <div class="col-md-6">
                    <div class="form-group">
                      <label for="name">Mensaje</label>
-                     <textarea name="message" id="message" class="form-control" rows="3" cols="25" required="required" placeholder="Mensaje ..."></textarea>
+                     <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"></textarea>
                    </div>
                  </div>
                  <div class="col-md-12">
@@ -407,7 +457,7 @@ $_SESSION['form_id'] = $_form_id;
              </form>
            </div>
            <div class="col-md-4">
-             <legend><span class="glyphicon glyphicon-globe"></span> Consultorios</legend>
+             <legend><span class="glyphicon glyphicon-globe"></span> Consultorio</legend>
              <address>
                Pocitos-Punta Carretas<br>
                Montevideo, Uruguay<br>
@@ -437,12 +487,22 @@ $_SESSION['form_id'] = $_form_id;
     
     <footer>
       <div align="center">
-        <span class="glyphicon glyphicon-earphone"></span> <a href="tel:+59899000000">123-546-555</a>
+        <span class="glyphicon glyphicon-earphone"></span> <a href="tel:+59899969586">099 969 586</a>
         |
         <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@barbaracardozo.com">info@barbaracardozo.com</a>
         <!-- <a href="skype:skype_user?call">Call us using Skype!</a> -->
       </div>
     </footer>
+    
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-65360728-1', 'auto');
+     ga('send', 'pageview');
+    </script>
 
   </body>
 </html>
