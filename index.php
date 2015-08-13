@@ -129,7 +129,9 @@ $_SESSION['form_id'] = $_form_id;
         font-size: 1.8em;
         display: none;
       }
-      
+      h2, .h2 {
+        font-size: 28px;
+      }
       #home h1 {
         font-family: 'Gentium Book Basic', serif;
         font-weight: 400;
@@ -325,8 +327,8 @@ $_SESSION['form_id'] = $_form_id;
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#services">Áreas de atención</a></li>
-              <li><a href="#profile">Perfil profesional</a></li>
+              <li><a href="#services">Áreas de Atención</a></li>
+              <li><a href="#profile">Perfil Profesional</a></li>
               <li><a href="#contact">Contacto</a></li>
             </ul>
           </div>
@@ -350,35 +352,41 @@ $_SESSION['form_id'] = $_form_id;
    <a name="services"></a>
    <section id="services">
       <div class="container">
-      <h1 align="center">Áreas de atención</h1>
+      <h1 align="center">Áreas de Atención</h1>
       <p align="justify">
       El espacio terapéutico es aquel donde el sujeto elabora y re-construye su historia mediante un pensar juntos, desenredando nudos mediante la palabra.
-      A la hora de consultar con con un psicólogo, por lo general se piensa que es a causa de problemáticas o conflictos emocionales específicos, sin embargo
+      A la hora de consultar con un psicólogo, por lo general se piensa que es a causa de problemáticas o conflictos emocionales específicos, sin embargo
       entendemos que el espacio de consulta es también indicado para aquellos que deseen comenzar un camino de mayor conocimiento de sí mismos.
       </p>
       
       <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <h2>Área clínica</h2>
+        <div class="col-sm-12 col-md-3">
+          <h2>Área Clínica</h2>
           <ul>
-             <li>Atención psicológica a niños, adolescentes y adultos.</li>
-             <li>Psicoterapia individual.</li>
-             <li>Orientación a padres.</li>
+             <li>Atención psicológica a niños, adolescentes y adultos</li>
+             <li>Psicoterapia individual</li>
+             <li>Orientación a padres</li>
            </ul>
         </div>
-        <div class="col-sm-12 col-md-4">
-           <h2>Área diagnóstica</h2>
+        <div class="col-sm-12 col-md-3">
+           <h2>Área Diagnóstica</h2>
            <ul>
              <li>Psicoadiagnóstico</li>
              <li>Baterías para certificados de discapacidad</li>
-             <li>Evaluaciones psicolaborales</li>
            </ul>
         </div>
-        <div class="col-sm-12 col-md-4">
-          <h2>Área educacional</h2>
+        <div class="col-sm-12 col-md-3">
+          <h2>Área Educacional</h2>
            <ul>
              <li>Intervenciones y acompañamientos en Instituciones educativas</li>
              <li>Talleres para padres y profesionales de la educación</li>
+           </ul>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <h2>Área Laboral</h2>
+           <ul>
+             <li>Evaluaciones psicolaborales</li>
+             <li>Búsqueda y selección de personal</li>
            </ul>
         </div>
       </p>
@@ -434,10 +442,7 @@ $_SESSION['form_id'] = $_form_id;
                    </div>
                    <div class="form-group">
                      <label for="email">Correo electrónico</label>
-                     <div class="input-group">
-                       <!--<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>-->
-                       <input type="email" class="form-control" id="email" name="email" required="required" />
-                     </div>
+                     <input type="email" class="form-control" id="email" name="email" required="required" />
                    </div>
                    <div class="form-group">
                       <label for="subject">Motivo del contacto</label>
